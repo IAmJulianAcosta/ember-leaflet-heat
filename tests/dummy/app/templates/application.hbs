@@ -1,0 +1,7 @@
+{{#leaflet-map lat=-0.245733 lng=-78.524189 zoom=13 elementId="map"}}
+	{{tile-layer url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"}}
+	{{ember-leaflet-heatmap latlngs=filteredPoints heatmapOptions=options}}
+	{{#each filtereddPoints as |point|}}
+		{{point}}
+	{{/each}}
+{{/leaflet-map}}
